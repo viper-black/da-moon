@@ -196,7 +196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823788435825676963, guid: f80e57675c58d3042bcde148720bd513, type: 3}
       propertyPath: rotationSpeed.y
-      value: -0.2
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f80e57675c58d3042bcde148720bd513, type: 3}
@@ -205,46 +205,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 823788435825676960, guid: f80e57675c58d3042bcde148720bd513, type: 3}
   m_PrefabInstance: {fileID: 199823796}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &344650065 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 10554878468720666, guid: f80e57675c58d3042bcde148720bd513, type: 3}
-  m_PrefabInstance: {fileID: 199823796}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &344650069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344650065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a81334ca5ed5ae04f93edd3389c2086a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 10
-  pivotAngle: {x: 0, y: 1, z: 0}
-  planet: {fileID: 536637861}
---- !u!1 &536637861 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4420943731507078967, guid: a6952990ca0d03c40b11514828eec549, type: 3}
-  m_PrefabInstance: {fileID: 1767386296}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &536637866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536637861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a81334ca5ed5ae04f93edd3389c2086a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 0.5
-  pivotAngle: {x: 0, y: 3, z: 0}
-  planet: {fileID: 1683123915}
 --- !u!1001 &727673036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -340,6 +300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1155427400}
+  - component: {fileID: 1155427401}
   m_Layer: 0
   m_Name: Earth Center
   m_TagString: Untagged
@@ -364,6 +325,21 @@ Transform:
   m_Father: {fileID: 2006822136}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155427401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155427399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81334ca5ed5ae04f93edd3389c2086a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 5
+  pivotAngle: {x: 0, y: 1, z: 0}
+  Center: {fileID: 2006822135}
 --- !u!1 &1395037896
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1395037897}
+  - component: {fileID: 1395037898}
   m_Layer: 0
   m_Name: Moon Center
   m_TagString: Untagged
@@ -396,6 +373,21 @@ Transform:
   m_Father: {fileID: 1155427400}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1395037898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395037896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81334ca5ed5ae04f93edd3389c2086a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 50
+  pivotAngle: {x: 0, y: 1, z: 0}
+  Center: {fileID: 1155427399}
 --- !u!1 &1683123915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7030425271285719186, guid: 278625a0efddb3949b75d9a5b21f9fa2, type: 3}
@@ -427,7 +419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 986602337, guid: a6952990ca0d03c40b11514828eec549, type: 3}
       propertyPath: rotationSpeed.z
-      value: -0.3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3896045004242058637, guid: a6952990ca0d03c40b11514828eec549, type: 3}
       propertyPath: m_RootOrder
